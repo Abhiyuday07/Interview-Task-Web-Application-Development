@@ -19,15 +19,17 @@ const ItemList = ({ items, onEdit, onDelete }) => {
             <button style={{ marginInline: 4 }} onClick={() => setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc')}>
                 Sort by name ({sortOrder === 'asc' ? 'Descending' : 'Ascending'})
             </button>
-            <ul>
+           <ul >
                 {sortedItems.map(item => (
                     <li key={item.id} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                        {item.name} - {item.category} - {item.date}
-                        <button onClick={() => onEdit(item.id)}>Edit</button>
-                        <button onClick={() => onDelete(item.id)}>Delete</button>
+                        <p>{item.name} - {item.category} - {item.date}</p>
+                        <div>
+                            <button onClick={() => onEdit(item.id)}>Edit</button>
+                            <button style={{ marginLeft: "10px" , background : "red"}} onClick={() => onDelete(item.id)}>Delete</button>
+                        </div>
                     </li>
                 ))}
-            </ul>
+            </ul>
         </div>
     );
 };
