@@ -1,88 +1,34 @@
-# Web Application Name
 
-Short description of your web application.
-
-## Table of Contents
-
-- [Overview](#overview)
-- [Setup](#setup)
-- [Functionality](#functionality)
-- [Assumptions](#assumptions)
-- [Code Quality](#code-quality)
-- [Running the Project](#running-the-project)
+# Interview-Task-Web-Application-Development
 
 ## Overview
-
-Describe your web application, its purpose, and main features briefly.
+This web application allows users to register, login, and perform CRUD operations on a list of items. It features session management, data filtering, sorting, and manipulation.
 
 ## Setup
-
-1. **Clone the Repository**:
-
-   ```bash
-   git clone https://github.com/your-username/your-repository.git
-   cd your-repository
-
-
-   Install Dependencies:   npm install
-   ```
-
-Ensure your browser's local storage is enabled.
+To set up the project:
+1. Clone the repository: `git clone [https://github.com/Abhiyuday07/Interview-Task-Web-Application-Development]`
+2. Navigate to the project directory: `cd [Interview-Task-Web-Application-Development]`
+3. Install dependencies: `npm install`
+4. Start the development server: `npm start`
 
 ## Functionality
+- **Registration**: Users can sign up by providing a username and password.
+- **Login**: Users can log in with their credentials.
+- **Session Management**: User sessions are maintained across different pages.
+- **Landing Page**: Displays an array of items with options to filter, sort, and perform CRUD operations.
 
-The web application includes the following features:
-
-## User Authentication:
-
-Register new users with username and password.
-Authenticate existing users during login.
-Store user credentials securely using local storage.
-Session Management:
-
-Maintain user sessions across different pages.
-Allow users to logout to end their session.
-
-## Landing Page:
-
-Display a list of items fetched from src/data.js.
-Implement CRUD operations (Create, Read, Update, Delete) on items.
-Allow filtering and sorting of items based on different criteria.
-
-## Item Management:
-
-Add new items with a form.
-Edit existing items inline.
-Delete items from the list.
-Assumptions
-During development, the following assumptions were made:
-
-User authentication and session management are handled using local storage for simplicity.
-Passwords are stored using bcryptjs encryption.
-The application does not include backend APIs; data manipulation is done using React state and local storage.
-Basic styling is applied for user interface components without focusing extensively on design aesthetics.
-Code Quality
-
-## The codebase maintains the following standards:
-
-Modular Structure: Components are organized into reusable modules (src/components/) for better maintainability.
-Meaningful Naming: Variables and functions are named descriptively to enhance code readability.
-Documentation: Important functions and complex logic are documented using comments for clarity.
-Consistent Formatting: Code is formatted using ESLint/Prettier to ensure consistency across the codebase.
+## Assumptions
+- Passwords are hashed for security.
+- The UI is designed for simplicity and ease of use.
 
 ## Running the Project
+To run the project:
+1. Ensure you have followed the setup instructions.
+2. Use `npm start` to launch the development server.
 
-To run the project locally, follow these steps:
+For detailed instructions on using the application's features, refer to the documentation within the code.
 
-## Start the Development Server:
+## Contributions
+Contributions are welcome via pull requests to the repository.
 
-npm start
 
-Access the Application:
-Open your web browser and go to http://localhost:3000 to view the application.
-
-## Testing Credentials:
-
-Register a new user or use the provided credentials to login.
-
-Navigate through the application to explore its features including item management, filtering, sorting, and CRUD operations.
